@@ -1,10 +1,14 @@
 # B01 – Kiểm tra IC: xác minh bảng chân trị 74HC00/02/04/08/32/86
 
+**Sinh viên:** Phạm Anh Quân – MSSV 2353011 · **Môn:** ĐATKLL – HCMUT
+
 **Mức độ:** ★ · **Nhóm linh kiện:** Nhóm 1 (IC họ 74) · **Môi trường:** Velxio (mô phỏng SPICE)
 
 | Thành phần | File |
 |---|---|
 | Project mô phỏng | `B01-kiem-tra-IC.vlx` (Velxio → File → Open project) |
+| Báo cáo PDF | `B01-kiem-tra-IC.pdf` |
+| Ảnh minh chứng | `img/B01_A?B?.png` |
 | Script sinh mạch | `../tools/gen_b01.py` |
 
 ---
@@ -100,9 +104,15 @@ Thống kê: 6 IC, 2 công tắc, 28 điện trở, 26 LED; 63 linh kiện, 136 
 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 1 |
 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 0 |
 
-**Kết luận:** 26/26 cổng × 4 tổ hợp (6 cổng NOT × 2 tổ hợp) khớp 100% với bảng lý thuyết ở mục 2.2.
+**Kết luận:** cả 26 cổng khớp 100% với bảng lý thuyết ở mục 2.2 (20 cổng 2 ngõ vào × 4 tổ hợp, 6 cổng NOT × 2 mức của A).
 
-> Cần bổ sung: ảnh chụp màn hình canvas ở từng tổ hợp (lưu vào `img/`).
+Ảnh chụp canvas Velxio. Hàng trên từ trái sang: 74HC00 (đỏ), 74HC02 (xanh lá), 74HC04 (xanh dương). Hàng dưới: 74HC08 (vàng), 74HC32 (cam), 74HC86 (trắng). LED sáng có quầng phát sáng.
+
+| A=0, B=0 | A=0, B=1 |
+|---|---|
+| ![A0B0](img/B01_A0B0.png) | ![A0B1](img/B01_A0B1.png) |
+| **A=1, B=0** | **A=1, B=1** |
+| ![A1B0](img/B01_A1B0.png) | ![A1B1](img/B01_A1B1.png) |
 
 ## 5. Khác biệt giữa mô phỏng và mạch thật
 

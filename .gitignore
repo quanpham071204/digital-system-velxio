@@ -1,0 +1,14 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# Tam thoi
+*.tmp
+~$*
