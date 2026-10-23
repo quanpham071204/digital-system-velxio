@@ -1,0 +1,517 @@
+{
+ "format": "velxio-project",
+ "version": 1,
+ "exportedAt": "2026-10-23T15:39:32.065140+00:00",
+ "name": "B04a - Dao dong RC 74HC14 (mach that)",
+ "boards": [],
+ "fileGroups": {},
+ "components": [
+  {
+   "id": "src",
+   "metadataId": "signal-generator",
+   "x": 40,
+   "y": 420,
+   "properties": {
+    "waveform": "dc",
+    "offset": 5,
+    "amplitude": 0,
+    "frequency": 1
+   }
+  },
+  {
+   "id": "u1",
+   "metadataId": "ic-74hc14",
+   "x": 420,
+   "y": 220,
+   "properties": {}
+  },
+  {
+   "id": "rf1",
+   "metadataId": "resistor",
+   "x": 600,
+   "y": 80,
+   "properties": {
+    "value": "100000"
+   }
+  },
+  {
+   "id": "pot1",
+   "metadataId": "potentiometer",
+   "x": 760,
+   "y": 50,
+   "properties": {
+    "value": 512,
+    "total": "50000"
+   }
+  },
+  {
+   "id": "c1",
+   "metadataId": "capacitor",
+   "x": 300,
+   "y": 140,
+   "properties": {
+    "value": "10u"
+   }
+  },
+  {
+   "id": "r_led1",
+   "metadataId": "resistor",
+   "x": 900,
+   "y": 135,
+   "properties": {
+    "value": "330"
+   }
+  },
+  {
+   "id": "led1",
+   "metadataId": "led",
+   "x": 1010,
+   "y": 120,
+   "properties": {
+    "color": "red",
+    "label": "1 Hz"
+   }
+  },
+  {
+   "id": "rf2",
+   "metadataId": "resistor",
+   "x": 600,
+   "y": 340,
+   "properties": {
+    "value": "10000"
+   }
+  },
+  {
+   "id": "pot2",
+   "metadataId": "potentiometer",
+   "x": 760,
+   "y": 310,
+   "properties": {
+    "value": 512,
+    "total": "5000"
+   }
+  },
+  {
+   "id": "c2",
+   "metadataId": "capacitor",
+   "x": 300,
+   "y": 400,
+   "properties": {
+    "value": "100n"
+   }
+  },
+  {
+   "id": "r_led2",
+   "metadataId": "resistor",
+   "x": 900,
+   "y": 395,
+   "properties": {
+    "value": "330"
+   }
+  },
+  {
+   "id": "led2",
+   "metadataId": "led",
+   "x": 1010,
+   "y": 380,
+   "properties": {
+    "color": "green",
+    "label": "1 kHz"
+   }
+  }
+ ],
+ "wires": [
+  {
+   "id": "w1",
+   "start": {
+    "componentId": "u1",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w2",
+   "start": {
+    "componentId": "u1",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rf1",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w3",
+   "start": {
+    "componentId": "rf1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "pot1",
+    "pinName": "VCC",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w4",
+   "start": {
+    "componentId": "pot1",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "pot1",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w5",
+   "start": {
+    "componentId": "pot1",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "u1",
+    "pinName": "1A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w6",
+   "start": {
+    "componentId": "u1",
+    "pinName": "1A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "c1",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w7",
+   "start": {
+    "componentId": "c1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w8",
+   "start": {
+    "componentId": "u1",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "r_led1",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w9",
+   "start": {
+    "componentId": "r_led1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "led1",
+    "pinName": "A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w10",
+   "start": {
+    "componentId": "led1",
+    "pinName": "C",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w11",
+   "start": {
+    "componentId": "u1",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rf2",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w12",
+   "start": {
+    "componentId": "rf2",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "pot2",
+    "pinName": "VCC",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w13",
+   "start": {
+    "componentId": "pot2",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "pot2",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w14",
+   "start": {
+    "componentId": "pot2",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "u1",
+    "pinName": "2A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w15",
+   "start": {
+    "componentId": "u1",
+    "pinName": "2A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "c2",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w16",
+   "start": {
+    "componentId": "c2",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w17",
+   "start": {
+    "componentId": "u1",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "r_led2",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w18",
+   "start": {
+    "componentId": "r_led2",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "led2",
+    "pinName": "A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w19",
+   "start": {
+    "componentId": "led2",
+    "pinName": "C",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w20",
+   "start": {
+    "componentId": "u1",
+    "pinName": "3A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w21",
+   "start": {
+    "componentId": "u1",
+    "pinName": "4A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w22",
+   "start": {
+    "componentId": "u1",
+    "pinName": "5A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  },
+  {
+   "id": "w23",
+   "start": {
+    "componentId": "u1",
+    "pinName": "6A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#000000"
+  }
+ ],
+ "activeBoardId": null
+}

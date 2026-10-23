@@ -10,7 +10,7 @@
 | [B01](B01-kiem-tra-IC/) | Kiểm tra IC 74HC00/02/04/08/32/86 | 1 | [.vlx](B01-kiem-tra-IC/B01-kiem-tra-IC.vlx) | [MD](B01-kiem-tra-IC/README.md) · [PDF](B01-kiem-tra-IC/B01-kiem-tra-IC.pdf) |
 | [B02](B02-NAND-van-nang/) | NAND là cổng vạn năng | 1 | [.vlx](B02-NAND-van-nang/B02-NAND-van-nang.vlx) | [MD](B02-NAND-van-nang/README.md) · [PDF](B02-NAND-van-nang/B02-NAND-van-nang.pdf) |
 | [B03](B03-NOR-van-nang/) | NOR là cổng vạn năng | 1 | [.vlx](B03-NOR-van-nang/B03-NOR-van-nang.vlx) | [MD](B03-NOR-van-nang/README.md) · [PDF](B03-NOR-van-nang/B03-NOR-van-nang.pdf) |
-| B04 | Schmitt trigger: clock và chống dội | 1 | ⬜ | ⬜ |
+| [B04](B04-Schmitt-trigger/) | Schmitt trigger: clock và chống dội | 1 | [a-RC](B04-Schmitt-trigger/B04a-dao-dong-RC.vlx) · [a-clock](B04-Schmitt-trigger/B04a-clock.vlx) · [b](B04-Schmitt-trigger/B04b-chong-doi.vlx) | [MD](B04-Schmitt-trigger/README.md) · [PDF](B04-Schmitt-trigger/B04-Schmitt-trigger.pdf) |
 | B05 | Tạo/kiểm tra bit chẵn lẻ 4 bit | 1 | ⬜ | ⬜ |
 | B06 | Biểu quyết đa số 3 người | 2 | ⬜ | ⬜ |
 | B07 | So sánh độ lớn 2 bit | 2 | ⬜ | ⬜ |
