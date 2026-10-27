@@ -44,12 +44,12 @@ class Project:
     def to_vcc(self, pin):
         self.wire(self.vcc, pin, C_PWR)
 
-    def switch(self, name, x, y, color=None):
+    def switch(self, name, x, y, color=None, value=0):
         """Công tắc gạt + pull-down 10 kΩ. Trả về chân ngõ ra (id, '2')."""
         color = color or SW_COLORS[self.sw_count % len(SW_COLORS)]
         self.sw_count += 1
         s, r = f"sw{name}", f"rpd{name}"
-        self.comp("slide-switch", s, x, y, {"value": 0})
+        self.comp("slide-switch", s, x, y, {"value": value})
         self.comp("resistor", r, x + 90, y + 40, {"value": "10000"})
         self.to_vcc((s, "3"))
         self.wire((s, "2"), (r, "1"), color)
@@ -75,13 +75,23 @@ class Project:
         self.to_gnd((cid, "GND"))
         return cid
 
-    def gate(self, kind, cid, x, y, a, b=None):
-        """Cổng rời Nhóm 2 (logic-gate-and/or/not/nor ...). Trả về (cid, 'Y')."""
+    def gate(self, kind, cid, x, y, a, b=None, c=None):
+        """Cổng rời Nhóm 2 (logic-gate-and/or/not/nor, and-3 ...). Trả về (cid, 'Y')."""
         self.comp(f"logic-gate-{kind}", cid, x, y)
-        self.wire(a, (cid, "A"))
-        if b is not None:
-            self.wire(b, (cid, "B"))
+        for pin, src in (("A", a), ("B", b), ("C", c)):
+            if src is not None:
+                self.wire(src, (cid, pin))
         return (cid, "Y")
+
+    def ff(self, kind, cid, x, y, clk, **data):
+        """Flip-Flop rời Nhóm 2 (d, t, jk). data: D=..., T=..., J=..., K=...
+        Trả về ((cid, 'Q'), (cid, 'Qbar'))."""
+        self.comp(f"flip-flop-{kind}", cid, x, y)
+        self.wire(clk, (cid, "CLK"))
+        for pin, src in data.items():
+            if src is not None:
+                self.wire(src, (cid, pin))
+        return (cid, "Q"), (cid, "Qbar")
 
     # ── output ──────────────────────────────────────────────────────────────
     def save(self, path):
