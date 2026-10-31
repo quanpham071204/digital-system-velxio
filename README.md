@@ -12,7 +12,7 @@
 | [B03](B03-NOR-van-nang/) | NOR là cổng vạn năng | 1 | [.vlx](B03-NOR-van-nang/B03-NOR-van-nang.vlx) | [MD](B03-NOR-van-nang/README.md) · [PDF](B03-NOR-van-nang/B03-NOR-van-nang.pdf) |
 | [B04](B04-Schmitt-trigger/) | Schmitt trigger: clock và chống dội | 1 | [a-RC](B04-Schmitt-trigger/B04a-dao-dong-RC.vlx) · [a-clock](B04-Schmitt-trigger/B04a-clock.vlx) · [b](B04-Schmitt-trigger/B04b-chong-doi.vlx) | [MD](B04-Schmitt-trigger/README.md) · [PDF](B04-Schmitt-trigger/B04-Schmitt-trigger.pdf) |
 | [B05](B05-parity-4bit/) | Tạo/kiểm tra bit chẵn lẻ 4 bit | 1 | [.vlx](B05-parity-4bit/B05-parity-4bit.vlx) | [MD](B05-parity-4bit/README.md) · [PDF](B05-parity-4bit/B05-parity-4bit.pdf) |
-| B06 | Biểu quyết đa số 3 người | 2 | ⬜ | ⬜ |
+| [B06](B06-bieu-quyet-da-so/) | Biểu quyết đa số 3 người | 2 | [.vlx](B06-bieu-quyet-da-so/B06-bieu-quyet-da-so.vlx) | [MD](B06-bieu-quyet-da-so/README.md) · [PDF](B06-bieu-quyet-da-so/B06-bieu-quyet-da-so.pdf) |
 | B07 | So sánh độ lớn 2 bit | 2 | ⬜ | ⬜ |
 | B08 | D Flip-Flop: chốt dữ liệu, chia tần | 2 | ⬜ | ⬜ |
 | B09 | JK Flip-Flop: 4 chế độ | 2 | ⬜ | ⬜ |
