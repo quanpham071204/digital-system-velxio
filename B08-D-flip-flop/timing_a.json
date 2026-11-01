@@ -1,0 +1,1 @@
+{"title": "(a) D Flip-Flop (kích cạnh lên) và D latch (kích mức), đo trong Velxio", "steps": ["a0", "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"], "signals": {"D": [0, 1, 1, 0, 0, 0, 1, 1, 1], "CLK / EN": [0, 0, 1, 1, 0, 1, 1, 0, 1], "Q (D-FF)": [0, 0, 1, 1, 1, 0, 0, 0, 1], "Q (latch)": [1, 1, 1, 0, 0, 0, 1, 1, 1]}}

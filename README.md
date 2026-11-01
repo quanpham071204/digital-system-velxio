@@ -14,7 +14,7 @@
 | [B05](B05-parity-4bit/) | Tạo/kiểm tra bit chẵn lẻ 4 bit | 1 | [.vlx](B05-parity-4bit/B05-parity-4bit.vlx) | [MD](B05-parity-4bit/README.md) · [PDF](B05-parity-4bit/B05-parity-4bit.pdf) |
 | [B06](B06-bieu-quyet-da-so/) | Biểu quyết đa số 3 người | 2 | [.vlx](B06-bieu-quyet-da-so/B06-bieu-quyet-da-so.vlx) | [MD](B06-bieu-quyet-da-so/README.md) · [PDF](B06-bieu-quyet-da-so/B06-bieu-quyet-da-so.pdf) |
 | [B07](B07-so-sanh-2bit/) | So sánh độ lớn 2 bit | 2 | [.vlx](B07-so-sanh-2bit/B07-so-sanh-2bit.vlx) | [MD](B07-so-sanh-2bit/README.md) · [PDF](B07-so-sanh-2bit/B07-so-sanh-2bit.pdf) |
-| B08 | D Flip-Flop: chốt dữ liệu, chia tần | 2 | ⬜ | ⬜ |
+| [B08](B08-D-flip-flop/) | D Flip-Flop: chốt dữ liệu, chia tần | 2 | [.vlx](B08-D-flip-flop/B08-D-flip-flop.vlx) | [MD](B08-D-flip-flop/README.md) · [PDF](B08-D-flip-flop/B08-D-flip-flop.pdf) |
 | B09 | JK Flip-Flop: 4 chế độ | 2 | ⬜ | ⬜ |
 | B10 | T Flip-Flop, bộ đếm gợn 3 bit | 2 | ⬜ | ⬜ |
 | C01 – C10 | Kết hợp | 1 / 2 | ⬜ | ⬜ |
@@ -31,6 +31,7 @@ Bxx-ten-bai/
 tools/
 ├── vlx.py             # thư viện dùng chung: nguồn, công tắc, LED, IC, cổng
 ├── gen_bxx.py         # sinh file .vlx (tái tạo mạch tự động)
+├── plot_timing.py     # vẽ giản đồ thời gian từ dữ liệu đo trong Velxio (B08–B10)
 ├── build_pdf.sh       # README.md → PDF (pandoc + Chromium)
 └── report.css         # định dạng PDF
 ```
