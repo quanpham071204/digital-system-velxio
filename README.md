@@ -16,7 +16,7 @@
 | [B07](B07-so-sanh-2bit/) | So sánh độ lớn 2 bit | 2 | [.vlx](B07-so-sanh-2bit/B07-so-sanh-2bit.vlx) | [MD](B07-so-sanh-2bit/README.md) · [PDF](B07-so-sanh-2bit/B07-so-sanh-2bit.pdf) |
 | [B08](B08-D-flip-flop/) | D Flip-Flop: chốt dữ liệu, chia tần | 2 | [.vlx](B08-D-flip-flop/B08-D-flip-flop.vlx) | [MD](B08-D-flip-flop/README.md) · [PDF](B08-D-flip-flop/B08-D-flip-flop.pdf) |
 | [B09](B09-JK-flip-flop/) | JK Flip-Flop: 4 chế độ | 2 | [.vlx](B09-JK-flip-flop/B09-JK-flip-flop.vlx) | [MD](B09-JK-flip-flop/README.md) · [PDF](B09-JK-flip-flop/B09-JK-flip-flop.pdf) |
-| B10 | T Flip-Flop, bộ đếm gợn 3 bit | 2 | ⬜ | ⬜ |
+| [B10](B10-T-FF-dem-gon/) | T Flip-Flop, bộ đếm gợn 3 bit | 2 | [.vlx](B10-T-FF-dem-gon/B10-T-FF-dem-gon.vlx) | [MD](B10-T-FF-dem-gon/README.md) · [PDF](B10-T-FF-dem-gon/B10-T-FF-dem-gon.pdf) |
 | C01 – C10 | Kết hợp | 1 / 2 | ⬜ | ⬜ |
 | A01 – A10 | Ứng dụng (chọn 2–3 bài) | 2 | ⬜ | ⬜ |
 
