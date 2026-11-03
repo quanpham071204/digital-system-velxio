@@ -128,3 +128,7 @@ Kết quả đọc từ trạng thái LED trên canvas khi gạt lần lượt 4
 
 - M. Morris Mano, *Digital Design*, chương 2–3 (cổng vạn năng, De Morgan).
 - NXP Semiconductors, *74HC00; 74HCT00 Quad 2-input NAND gate*, Rev. 7, 2015.
+
+## Video demo
+
+[Video demo local](video/B02-demo.mp4) — 18,20 s, H.264, 1880×944. Quay mô phỏng Velxio thật với đủ bốn tổ hợp A/B: 00 → 01 → 11 → 10; LED NOT A, AND, OR, NOR, XOR đối chiếu bảng chân trị ở mục 5. Con trỏ di chuyển gần thẳng, rung nhẹ và dừng tại công tắc; seed 6002.

@@ -145,3 +145,7 @@ Cách khắc phục: dùng **bộ đếm đồng bộ** (mọi FF chung clock, C
 - M. Morris Mano, *Digital Design*, chương 6 (ripple counter, synchronous counter).
 - Nexperia, *74HC74*, *74HC107* datasheet (trễ CLK → Q).
 - Velxio, mã nguồn `FlipFlopElements.ts`, `digitalGateEngine.ts`.
+
+## Video demo
+
+[Video demo local](video/B10-demo.mp4) — 174,67 s, H.264, 1880×944. Quay Velxio thật 55 trạng thái: ba phiên bản T-FF giữ khi T=0, đảo khi T=1; bộ đếm gợn chín cạnh lên mỗi chiều, đủ vòng đếm lên/xuống. Video giữ và ghi phụ đề hiện tượng đổi DN gây nhảy 001 → 111 và 110 → 000 như mục 3.3. Con trỏ di chuyển mượt, gần thẳng và rung nhẹ; seed 6010.

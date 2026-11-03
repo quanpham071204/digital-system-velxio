@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="365" viewBox="0 0 1120 365">
+<rect width="1120" height="365" fill="white"/><style>text{font-family:Arial,sans-serif;fill:#17263c;font-size:18px}.title{font-weight:bold;font-size:22px}.small{font-size:15px}.box{fill:#eef5ff;stroke:#36577e;stroke-width:2}.path{fill:#fff1da;stroke:#c35d15;stroke-width:2}.wire{fill:none;stroke:#36577e;stroke-width:2;marker-end:url(#arrow)}.crit{fill:none;stroke:#c35d15;stroke-width:3;marker-end:url(#orange)}</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#36577e"/></marker><marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c35d15"/></marker></defs>
+<text x="25" y="32" class="title">Full adder từ 2 half adder + OR</text>
+<text x="30" y="105">A, B</text><path class="wire" d="M80 99H145"/><rect class="box" x="145" y="65" width="160" height="72" rx="8"/><text x="162" y="94">HA1</text><text x="162" y="118" class="small">P = A⊕B; G = AB</text>
+<path class="wire" d="M305 90H400"/><text x="338" y="82" class="small">P</text><text x="328" y="145" class="small">Cin</text><path class="wire" d="M370 140V115H400"/><rect class="box" x="400" y="65" width="190" height="72" rx="8"/><text x="418" y="94">HA2</text><text x="418" y="118" class="small">S = P⊕Cin; H = P·Cin</text>
+<path class="wire" d="M590 90H665"/><text x="674" y="96">S</text><path class="wire" d="M305 120V180H710"/><text x="620" y="173" class="small">G</text><path class="wire" d="M590 120V205H710"/><text x="620" y="198" class="small">H</text><rect class="box" x="710" y="163" width="100" height="65" rx="8"/><text x="742" y="202">OR</text><path class="wire" d="M810 195H875"/><text x="885" y="201">Cout</text>
+<text x="25" y="267" class="title">Đường nhớ dài nhất: bit 0 → bit 1</text>
+<text x="25" y="323">A0/B0</text><path class="crit" d="M93 317H125"/>
+<rect class="path" x="125" y="290" width="125" height="55" rx="8"/><text x="147" y="323">XOR P0</text><path class="crit" d="M250 317H295"/>
+<rect class="path" x="295" y="290" width="120" height="55" rx="8"/><text x="312" y="323">AND H0</text><path class="crit" d="M415 317H460"/>
+<rect class="path" x="460" y="290" width="100" height="55" rx="8"/><text x="478" y="323">OR C1</text><path class="crit" d="M560 317H605"/>
+<rect class="path" x="605" y="290" width="120" height="55" rx="8"/><text x="622" y="323">AND H1</text><path class="crit" d="M725 317H770"/>
+<rect class="path" x="770" y="290" width="120" height="55" rx="8"/><text x="789" y="323">OR Cout</text><path class="crit" d="M890 317H930"/><text x="940" y="323">Cout</text>
+</svg>

@@ -1,0 +1,1 @@
+A=3  B=3  Cin=1  | EXPECTED Cout S1 S0 = 111                                                                                                                                        

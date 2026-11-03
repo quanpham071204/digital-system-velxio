@@ -1,0 +1,1461 @@
+{
+ "format": "velxio-project",
+ "version": 1,
+ "exportedAt": "2026-11-03T10:58:35.044867+00:00",
+ "name": "C02 - Cong tru 2 bit",
+ "boards": [],
+ "fileGroups": {},
+ "components": [
+  {
+   "id": "src",
+   "metadataId": "signal-generator",
+   "x": 40,
+   "y": 740,
+   "properties": {
+    "waveform": "dc",
+    "offset": 5,
+    "amplitude": 0,
+    "frequency": 1
+   }
+  },
+  {
+   "id": "swA0",
+   "metadataId": "slide-switch",
+   "x": 160,
+   "y": 100,
+   "properties": {
+    "value": 0
+   }
+  },
+  {
+   "id": "rpdA0",
+   "metadataId": "resistor",
+   "x": 250,
+   "y": 140,
+   "properties": {
+    "value": "10000"
+   }
+  },
+  {
+   "id": "swB0",
+   "metadataId": "slide-switch",
+   "x": 160,
+   "y": 220,
+   "properties": {
+    "value": 0
+   }
+  },
+  {
+   "id": "rpdB0",
+   "metadataId": "resistor",
+   "x": 250,
+   "y": 260,
+   "properties": {
+    "value": "10000"
+   }
+  },
+  {
+   "id": "swA1",
+   "metadataId": "slide-switch",
+   "x": 160,
+   "y": 340,
+   "properties": {
+    "value": 0
+   }
+  },
+  {
+   "id": "rpdA1",
+   "metadataId": "resistor",
+   "x": 250,
+   "y": 380,
+   "properties": {
+    "value": "10000"
+   }
+  },
+  {
+   "id": "swB1",
+   "metadataId": "slide-switch",
+   "x": 160,
+   "y": 460,
+   "properties": {
+    "value": 0
+   }
+  },
+  {
+   "id": "rpdB1",
+   "metadataId": "resistor",
+   "x": 250,
+   "y": 500,
+   "properties": {
+    "value": "10000"
+   }
+  },
+  {
+   "id": "swM",
+   "metadataId": "slide-switch",
+   "x": 160,
+   "y": 580,
+   "properties": {
+    "value": 0
+   }
+  },
+  {
+   "id": "rpdM",
+   "metadataId": "resistor",
+   "x": 250,
+   "y": 620,
+   "properties": {
+    "value": "10000"
+   }
+  },
+  {
+   "id": "xor",
+   "metadataId": "ic-74hc86",
+   "x": 480,
+   "y": 180,
+   "properties": {}
+  },
+  {
+   "id": "xor2",
+   "metadataId": "ic-74hc86",
+   "x": 700,
+   "y": 180,
+   "properties": {}
+  },
+  {
+   "id": "and",
+   "metadataId": "ic-74hc08",
+   "x": 950,
+   "y": 180,
+   "properties": {}
+  },
+  {
+   "id": "or",
+   "metadataId": "ic-74hc32",
+   "x": 1200,
+   "y": 180,
+   "properties": {}
+  },
+  {
+   "id": "r_led_s0",
+   "metadataId": "resistor",
+   "x": 1500,
+   "y": 95,
+   "properties": {
+    "value": "330"
+   }
+  },
+  {
+   "id": "led_s0",
+   "metadataId": "led",
+   "x": 1610,
+   "y": 80,
+   "properties": {
+    "color": "green",
+    "label": "S0"
+   }
+  },
+  {
+   "id": "r_led_s1",
+   "metadataId": "resistor",
+   "x": 1500,
+   "y": 235,
+   "properties": {
+    "value": "330"
+   }
+  },
+  {
+   "id": "led_s1",
+   "metadataId": "led",
+   "x": 1610,
+   "y": 220,
+   "properties": {
+    "color": "yellow",
+    "label": "S1"
+   }
+  },
+  {
+   "id": "r_led_cout",
+   "metadataId": "resistor",
+   "x": 1500,
+   "y": 375,
+   "properties": {
+    "value": "330"
+   }
+  },
+  {
+   "id": "led_cout",
+   "metadataId": "led",
+   "x": 1610,
+   "y": 360,
+   "properties": {
+    "color": "red",
+    "label": "COUT"
+   }
+  },
+  {
+   "id": "r_led_overflow",
+   "metadataId": "resistor",
+   "x": 1500,
+   "y": 515,
+   "properties": {
+    "value": "330"
+   }
+  },
+  {
+   "id": "led_overflow",
+   "metadataId": "led",
+   "x": 1610,
+   "y": 500,
+   "properties": {
+    "color": "red",
+    "label": "OVERFLOW"
+   }
+  }
+ ],
+ "wires": [
+  {
+   "id": "w1",
+   "start": {
+    "componentId": "src",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "swA0",
+    "pinName": "3",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff3030"
+  },
+  {
+   "id": "w2",
+   "start": {
+    "componentId": "swA0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rpdA0",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ffcc00"
+  },
+  {
+   "id": "w3",
+   "start": {
+    "componentId": "rpdA0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w4",
+   "start": {
+    "componentId": "src",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "swB0",
+    "pinName": "3",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff3030"
+  },
+  {
+   "id": "w5",
+   "start": {
+    "componentId": "swB0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rpdB0",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#33cc66"
+  },
+  {
+   "id": "w6",
+   "start": {
+    "componentId": "rpdB0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w7",
+   "start": {
+    "componentId": "src",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "swA1",
+    "pinName": "3",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff3030"
+  },
+  {
+   "id": "w8",
+   "start": {
+    "componentId": "swA1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rpdA1",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff66cc"
+  },
+  {
+   "id": "w9",
+   "start": {
+    "componentId": "rpdA1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w10",
+   "start": {
+    "componentId": "src",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "swB1",
+    "pinName": "3",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff3030"
+  },
+  {
+   "id": "w11",
+   "start": {
+    "componentId": "swB1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rpdB1",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#66ccff"
+  },
+  {
+   "id": "w12",
+   "start": {
+    "componentId": "rpdB1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w13",
+   "start": {
+    "componentId": "src",
+    "pinName": "SIG",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "swM",
+    "pinName": "3",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff3030"
+  },
+  {
+   "id": "w14",
+   "start": {
+    "componentId": "swM",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "rpdM",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#ff9933"
+  },
+  {
+   "id": "w15",
+   "start": {
+    "componentId": "rpdM",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w16",
+   "start": {
+    "componentId": "xor",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w17",
+   "start": {
+    "componentId": "xor2",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w18",
+   "start": {
+    "componentId": "and",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w19",
+   "start": {
+    "componentId": "or",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w20",
+   "start": {
+    "componentId": "swB0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "1A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w21",
+   "start": {
+    "componentId": "swM",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "1B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w22",
+   "start": {
+    "componentId": "swB1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "2A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w23",
+   "start": {
+    "componentId": "swM",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "2B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w24",
+   "start": {
+    "componentId": "swA0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "3A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w25",
+   "start": {
+    "componentId": "xor",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "3B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w26",
+   "start": {
+    "componentId": "swA0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "1A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w27",
+   "start": {
+    "componentId": "xor",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "1B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w28",
+   "start": {
+    "componentId": "xor",
+    "pinName": "3Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor2",
+    "pinName": "1A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w29",
+   "start": {
+    "componentId": "swM",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor2",
+    "pinName": "1B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w30",
+   "start": {
+    "componentId": "xor",
+    "pinName": "3Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "2A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w31",
+   "start": {
+    "componentId": "swM",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "2B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w32",
+   "start": {
+    "componentId": "and",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "or",
+    "pinName": "1A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w33",
+   "start": {
+    "componentId": "and",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "or",
+    "pinName": "1B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w34",
+   "start": {
+    "componentId": "swA1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "4A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w35",
+   "start": {
+    "componentId": "xor",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor",
+    "pinName": "4B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w36",
+   "start": {
+    "componentId": "swA1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "3A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w37",
+   "start": {
+    "componentId": "xor",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "3B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w38",
+   "start": {
+    "componentId": "xor",
+    "pinName": "4Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor2",
+    "pinName": "2A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w39",
+   "start": {
+    "componentId": "or",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor2",
+    "pinName": "2B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w40",
+   "start": {
+    "componentId": "xor",
+    "pinName": "4Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "4A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w41",
+   "start": {
+    "componentId": "or",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "and",
+    "pinName": "4B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w42",
+   "start": {
+    "componentId": "and",
+    "pinName": "3Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "or",
+    "pinName": "2A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w43",
+   "start": {
+    "componentId": "and",
+    "pinName": "4Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "or",
+    "pinName": "2B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w44",
+   "start": {
+    "componentId": "or",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor2",
+    "pinName": "3A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w45",
+   "start": {
+    "componentId": "or",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "xor2",
+    "pinName": "3B",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w46",
+   "start": {
+    "componentId": "xor2",
+    "pinName": "4A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w47",
+   "start": {
+    "componentId": "xor2",
+    "pinName": "4B",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w48",
+   "start": {
+    "componentId": "or",
+    "pinName": "3A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w49",
+   "start": {
+    "componentId": "or",
+    "pinName": "3B",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w50",
+   "start": {
+    "componentId": "or",
+    "pinName": "4A",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w51",
+   "start": {
+    "componentId": "or",
+    "pinName": "4B",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w52",
+   "start": {
+    "componentId": "xor2",
+    "pinName": "1Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "r_led_s0",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w53",
+   "start": {
+    "componentId": "r_led_s0",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "led_s0",
+    "pinName": "A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w54",
+   "start": {
+    "componentId": "led_s0",
+    "pinName": "C",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w55",
+   "start": {
+    "componentId": "xor2",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "r_led_s1",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w56",
+   "start": {
+    "componentId": "r_led_s1",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "led_s1",
+    "pinName": "A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w57",
+   "start": {
+    "componentId": "led_s1",
+    "pinName": "C",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w58",
+   "start": {
+    "componentId": "or",
+    "pinName": "2Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "r_led_cout",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w59",
+   "start": {
+    "componentId": "r_led_cout",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "led_cout",
+    "pinName": "A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w60",
+   "start": {
+    "componentId": "led_cout",
+    "pinName": "C",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  },
+  {
+   "id": "w61",
+   "start": {
+    "componentId": "xor2",
+    "pinName": "3Y",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "r_led_overflow",
+    "pinName": "1",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w62",
+   "start": {
+    "componentId": "r_led_overflow",
+    "pinName": "2",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "led_overflow",
+    "pinName": "A",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [],
+   "color": "#00aaff"
+  },
+  {
+   "id": "w63",
+   "start": {
+    "componentId": "led_overflow",
+    "pinName": "C",
+    "x": 0,
+    "y": 0
+   },
+   "end": {
+    "componentId": "src",
+    "pinName": "GND",
+    "x": 0,
+    "y": 0
+   },
+   "waypoints": [
+    {
+     "x": 350,
+     "y": 820
+    },
+    {
+     "x": 80,
+     "y": 820
+    }
+   ],
+   "color": "#000000"
+  }
+ ],
+ "activeBoardId": null
+}

@@ -136,3 +136,7 @@ Với JK **kích mức** (latch), khi J = K = 1 và CLK = 1 kéo dài hơn trễ
 - M. Morris Mano, *Digital Design*, chương 5 (JK flip-flop, characteristic/excitation table).
 - Nexperia, *74HC107 Dual JK flip-flop with reset; negative-edge trigger*, datasheet.
 - Velxio, mã nguồn `FlipFlopElements.ts`, `digitalGateEngine.ts`.
+
+## Video demo
+
+[Video demo local](video/B09-demo.mp4) — 73 s, H.264, 1880×944. Quay Velxio thật 23 trạng thái: JK giữ, đặt, xóa và đảo ba lần; đổi J/K khi CLK cao cho thấy Q giữ đến cạnh lên kế tiếp. Q̄ luôn ngược Q. Con trỏ di chuyển mượt, gần thẳng và rung nhẹ; seed 6009.

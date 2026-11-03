@@ -126,3 +126,8 @@ Thống kê: 6 IC, 2 công tắc, 28 điện trở, 26 LED; 63 linh kiện, 136 
 - NXP Semiconductors, *74HC00; 74HCT00 Quad 2-input NAND gate*, Rev. 7, 2015.
 - Datasheet 74HC02, 74HC04, 74HC08, 74HC32, 74HC86 (Nexperia / TI) cho sơ đồ chân.
 - Velxio, mã nguồn `frontend/src/components/velxio-components/LogicICElements.ts`, `simulation/spice/NetlistBuilder.ts`.
+
+## Video demo
+
+[Video local B01](video/B01-demo.mp4): 4 tổ hợp A/B = 00, 01, 11, 10; quan sát 26 LED của sáu IC. Thời lượng 18,30 s; 1880 × 944; seed 6001. Đã kiểm tra ffprobe, giải mã toàn video và 16 khung/2 s quanh chuyển động chuột.
+

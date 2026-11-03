@@ -128,3 +128,7 @@ Kết quả đọc từ trạng thái LED khi gạt 4 tổ hợp A, B (1 = LED s
 
 - M. Morris Mano, *Digital Design*, chương 2–3 (đối ngẫu, mạch NAND–NAND và NOR–NOR).
 - Nexperia, *74HC02; 74HCT02 Quad 2-input NOR gate*, datasheet (sơ đồ chân).
+
+## Video demo
+
+[Video demo local](video/B03-demo.mp4) — 17,13 s, H.264, 1880×944. Quay mô phỏng Velxio thật đủ bốn tổ hợp A/B: 00 → 01 → 11 → 10; LED NOT A, OR, AND, NAND, XNOR đối chiếu bảng chân trị. Con trỏ di chuyển gần thẳng, rung nhẹ và dừng tại công tắc; seed 6003.

@@ -121,3 +121,7 @@ Gạt đủ 8 tổ hợp, đọc trạng thái 2 LED:
 
 - M. Morris Mano, *Digital Design*, chương 3 (bìa Karnaugh, dạng chính tắc SOP/POS).
 - Velxio, mã nguồn `frontend/src/simulation/digital/digitalGateEngine.ts`.
+
+## Video demo
+
+[Video demo local](video/B06-demo.mp4) — 29,57 s, H.264, 1880×944. Quay mô phỏng Velxio thật đủ tám tổ hợp ABC theo thứ tự Gray: 000 → 001 → 011 → 010 → 110 → 111 → 101 → 100. LED Thông qua (Y) sáng khi có ít nhất hai phiếu, LED Nhất trí (U) chỉ sáng tại 111. Con trỏ di chuyển mượt, gần thẳng và rung nhẹ; seed 6006.

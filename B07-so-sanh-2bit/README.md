@@ -136,3 +136,7 @@ Ghi chú: dòng chữ đỏ "SPICE Warning: There are no vectors currently activ
 
 - M. Morris Mano, *Digital Design*, mục "Magnitude comparator".
 - Texas Instruments, *SN74HC85 4-bit magnitude comparator*, datasheet.
+
+## Video demo
+
+[Video demo local](video/B07-demo.mp4) — 58,53 s, H.264, 1880×944. Quay Velxio thật đủ 16 cặp A/B hai bit, theo thứ tự Gray của A1 A0 B1 B0. Mỗi cảnh có đúng một LED A > B, A = B hoặc A < B sáng, khớp kết quả so sánh. Con trỏ di chuyển mượt, gần thẳng và rung nhẹ; seed 6007.

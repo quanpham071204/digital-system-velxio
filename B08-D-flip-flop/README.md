@@ -160,3 +160,7 @@ Bậc độ lớn cho 74HC74 ở VCC = 4,5 V, 25 °C (theo datasheet NXP/Nexperi
 - Nexperia, *74HC74; 74HCT74 Dual D-type flip-flop with set and reset; positive edge-trigger*, datasheet (sơ đồ logic, thông số động).
 - M. Morris Mano, *Digital Design*, chương 5 (latch, flip-flop, thông số thời gian).
 - Velxio, mã nguồn `FlipFlopElements.ts`, `digitalGateEngine.ts`.
+
+## Video demo
+
+[Video demo local](video/B08-demo.mp4) — 79,63 s, H.264, 1880×944. Quay Velxio thật 25 trạng thái: so sánh D-FF kích cạnh lên với latch trong suốt khi CLK cao; thử PRE/CLR bất đồng bộ; bộ chia hai qua bốn cạnh lên CLK. Q của D-FF và bộ chia ban đầu bằng 0; trạng thái latch lúc khởi động không được giả định. Con trỏ di chuyển mượt, gần thẳng và rung nhẹ; seed 6008.
